@@ -2,8 +2,7 @@
 module.exports = {
   content: [
     'index.html',
-    'thanks.html'
-  ],
+   ],
   theme: {
     container : {
       center : true,
