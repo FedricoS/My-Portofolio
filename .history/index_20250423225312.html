@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="p-4 flex items-center space-x-2">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="icon" href="dist/favicon.svg" type="image/png" class="h-20 w-max mr-2">
+    <title>Portofolio Tailwind CSS</title>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <!-- <a href="#home" class="font-bold text-lg text-primary block py-6">Fedrico Simatupang</a> -->
+                    <a href="#">
+                        <img src="dist/logo2.png" alt="home" class="h-14 w-auto "> 
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hambuerger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 px-4 flex group-hover:text-primary">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#project" class="text-base text-dark py-2 px-4 flex group-hover:text-primary">Project</a>
+                            </li>
+                            <li class="group">
+                                <a href="#workexperience" class="text-base text-dark py-2 px-4 flex group-hover:text-primary">Work Experience</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 px-4 flex group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap items-center">
+                <!-- Bagian Teks -->
+                <div class="w-full px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">
+                        Hallo Semua🙌, Saya
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
+                            Fedrico Simatupang
+                        </span>
+                    </h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-10">
+                        Informatics Engineering Graduate
+                    </h2>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed indent-10 text-justify">
+                        I am a graduate of Informatics Engineering from Adventist University of Indonesia. I have experience as a Software Quality Assurance Tester, WordPress Developer, and basic understanding of Fullstack Development and Data Analyst.
+                    </p>
+                    <a href="dist/Fedrico Simatupang-CV.pdf" target="_blank" class="text-base font-semibold text-white bg-primary py-3 px-8  rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                        Check My Resume
+                    </a>
+                    
+                </div>
+
+                <!-- Bagian Gambar -->
+                <div class="pt-10 w-full px-4 lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="relative w-[60%] lg:w-[50%]"> 
+                        <!-- Foto -->
+                        <img src="dist/rico2-1.png" alt="fedrico" class="w-full h-auto mx-auto" />
+                
+                        <!-- Background SVG -->
+                        <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-10 w-[150%] scale-150 mb-3">
+                            <svg width="100%" height="auto" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#2563eb" d="M50.1,-6.6C50.1,18.6,25.1,37.2,3.6,37.2C-17.9,37.2,-35.8,18.6,-35.8,-6.6C-35.8,-31.8,-17.9,-63.6,3.6,-63.6C25.1,-63.6,50.1,-31.8,50.1,-6.6Z" transform="translate(100 100)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-28">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+                    <h2 class="font-semibold text-dark text-3xl mb-5 max-w-md lg:text-3xl">Creating Digital Solutions with Real Impact</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">"I believe that technology is not just about code, but how it impacts people."</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl pt-12 lg:w-1/2">Let Be Friend</h3>
+                    <p class="font-medium text-base text-secondary mb-6">Let's connect and grow together. Please contact me or check out more via:
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ricos_18/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+
+                        <!-- Github -->
+                        <a href="https://github.com/FedricoS" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                            <svg role="img" class="fill-current w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a href="www.linkedin.com/in/fedricos" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-current w-6 h-6">
+                                <path
+                                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portofolio Section Start -->
+    <section id="project" class="pt-28 pb-32 bg-dark">
+        <div class="container">
+            <div class="w-full fx-4">
+                <div class="max-w-xl mx-auto text-center mb-8">
+                    <h4 class="font-semibold text-3xl text-white">Project</h4>
+                    <h2 class="font-bold text-dark text-3xl">My Project</h2>
+                    <p class="font-medium text-md text-secondary">Here are the projects I've worked on</p>
+                </div>
+            </div>
+
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/Todolist Laravel.png" alt="crudphp" class="w-full h-auto">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Todolist Laravel</h3>
+                    <p class="font-medium text-base text-secondary">Build a simple Create, Read, Update, Delete (CRUD) webside application using php framework (LARAVEL)</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                            View Code
+                            </a>
+                            <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                            Demo
+                            </a>
+                    </div>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/CRUD PHP.png" alt="crudphp" class="w-full h-auto">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">CRUD PHP</h3>
+                    <p class="font-medium text-base text-secondary">Build a simple Create, Read, Update, Delete (CRUD) webside application using PHP</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                            View Code
+                            </a>
+                            <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                            Demo
+                            </a>
+                    </div>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/Python.png" alt="crudphp" class="w-full h-auto">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Python Using JupyterNotebook</h3>
+                    <p class="font-medium text-base text-secondary">Conduct sentiment analysis as a final project (thesis) during college, also using machine learning algorithms on jupyter notebook (python).</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                            View Code
+                            </a>
+                            <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                            Demo
+                            </a>
+                    </div>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/Wordpress.png" alt="crudphp" class="w-full h-auto">
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website Using Wordpress</h3>
+                        <p class="font-medium text-base text-secondary">Created 2 websites using wordpress cms, 1 for interns, 1 for customers who want to attend seminars, public training provided by the company.</p>
+                        <div class="flex gap-3 mt-4">
+                            <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                                View Code
+                                </a>
+                                <a href="#" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+                                Demo
+                                </a>
+                        </div>
+                    </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Portofolio Section End -->
+
+    <!-- Skill Section Start  -->
+
+    <section id="skills" class="pt-32 pb-32 bg-slate-100">
+            <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                <h4 class="text-3xl font-semibold text-primary mb-2">Skills</h4>
+                <p class="text-md font-medium text-secondary md:text-lg">
+                    Here are Some of the areas of expertise and technology that I usually have and have used
+                </p>
+                </div>
+            </div>
+        
+            <!-- Grid 3 kolom -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                
+                <!-- Skill Group 1: Web Developer -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+                <h3 class="text-xl font-bold text-dark mb-4 text-center">Web Developer</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="flex flex-col items-center w-20">
+                    <img src="dist/svg/html-5-svgrepo-com.svg" alt="HTML" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium">HTML</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                    <img src="dist/svg/css-3-svgrepo-com.svg" alt="CSS" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium">CSS</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                    <img src="dist/svg/javascript-svgrepo-com.svg" alt="JavaScript" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium">JavaScript</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                        <img src="dist/svg/tailwind-svgrepo-com.svg" alt="Tailwind" class="w-10 h-10 mb-1">
+                        <span class="text-sm text-dark font-medium">Tailwind</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                        <img src="dist/svg/php-svgrepo-com.svg" alt="Tailwind" class="w-10 h-10 mb-1">
+                        <span class="text-sm text-dark font-medium">PHP</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                        <img src="dist/svg/laravel-svgrepo-com.svg" alt="Tailwind" class="w-10 h-10 mb-1">
+                        <span class="text-sm text-dark font-medium">Laravel</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                        <img src="dist/svg/wordpress-color-svgrepo-com.svg" alt="Tailwind" class="w-10 h-10 mb-1">
+                        <span class="text-sm text-dark font-medium">Wordpress</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                        <img src="dist/svg/bootstrap-svgrepo-com.svg" alt="Tailwind" class="w-10 h-10 mb-1">
+                        <span class="text-sm text-dark font-medium">Bootstrap</span>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Skill Group 2: Data Analyst -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+                <h3 class="text-xl font-bold text-dark mb-4 text-center">Data Analyst</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="flex flex-col items-center w-20">
+                    <img src="dist/svg/python-svgrepo-com.svg" alt="Python" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                    <img src="dist/svg/mysql-logo-svgrepo-com.svg" alt="SQL" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium">SQL</span>
+                    </div>
+                    <div class="flex flex-col items-center w-20">
+                    <img src="dist/svg/tableau-icon-svgrepo-com.svg" alt="Excel" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium">Tableau</span>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Skill Group 3: Soft Skills -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+                <h3 class="text-xl font-bold text-dark mb-4 text-center">Software QA Tester</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="flex flex-col items-center w-24">
+                    <img src="dist/svg/postman-icon-svgrepo-com.svg" alt="Communication" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium text-center">Postman</span>
+                    </div>
+                    <div class="flex flex-col items-center w-24">
+                    <img src="dist/svg/jira-svgrepo-com.svg" alt="Teamwork" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium text-center">Jira Software</span>
+                    </div>
+                    <div class="flex flex-col items-center w-24">
+                    <img src="dist/svg/notion-svgrepo-com.svg" alt="Problem Solving" class="w-10 h-10 mb-1">
+                    <span class="text-sm text-dark font-medium text-center">Notion</span>
+                    </div>
+                </div>
+                </div>
+        
+            </div>
+            </div>
+        </section>
+    
+    <!-- Skill Section End -->
+
+    <!-- Work Experience Section Start -->
+    <section id="workexperience" class="py-12 pt-28 pb-32 px-4 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-3xl font-bold text-center mb-5">Work Experience</h2>
+                <p class="text-sm text-center text-gray-400 max-w-md mx-auto mb-16">
+                    My work experience has been one of continual learning and professional progress, allowing me to build a wide range of talents and contribute meaningfully to each role I've held. <br> The following are the details of my career:
+                </p>
+
+                <div class="relative border-l-2 border-primary pl-6 space-y-10">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative">
+                    <!-- Titik di garis -->
+                    <span class="absolute -left-[13px] top-2 w-3 h-3 rounded-full border-2 border-primary"></span>
+                    
+                    <!-- Card -->
+                    <div class="bg-[#1a1535] p-4 rounded-lg border border-primary">
+                        <div class="flex items-start gap-3">
+                            <img src="dist/HMI-logo.png" alt="Company logo" class="w-10 h-10 rounded-md object-cover grayscale hover:grayscale-0 transition duration-300 shadow-md" />
+                            <div>
+                                <h3 class="font-semibold text-base mb-1">PT. Hoyasindo Milka Internusa, Semarang</h3>
+                                <p class="text-xs text-gray-400 mb-1">Admin</p>
+                                <p class="text-xs text-gray-500 mb-2">August 2024 - Desember 2025</p>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    Managing important files, related to work reports that must always be updated to company customers, updating ongoing work every week, conducting periodic absences per day, and also recording work done per day.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Timeline Item 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[13px] top-2 w-3 h-3 rounded-full border-2 border-primary"></span>
+                    <div class="bg-[#1a1535] p-4 rounded-lg border border-primary">
+                    <div class="flex items-start gap-3">
+                        <img src="/img/sdamedia-logo.png" alt="sdamedia-logo logo" class="w-10 h-10 rounded-md object-cover grayscale hover:grayscale-0 transition duration-300 shadow-md" />
+                            <div>
+                                <h3 class="font-semibold text-base mb-1">Seventh-day Adventist Media, Bandung</h3>
+                                <p class="text-xs text-gray-400 mb-1">Software Quality Assurance Tester</p>
+                                <p class="text-xs text-gray-500 mb-2">March 2023 - Mei 2023</p>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    Assist developers in the application development process, by conducting simple feasibility tests on applications that are being built, documenting the results of testing on jira software, recording a meeting with outside freelancers who work with the ministry, in the form of progress on the project being worked on.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Tambahkan item lain di sini -->
+                <!-- Timeline Item 3 -->
+                <div class="relative">
+                    <span class="absolute -left-[13px] top-2 w-3 h-3 rounded-full border-2 border-primary"></span>
+                    <div class="bg-[#1a1535] p-4 rounded-lg border border-primary">
+                    <div class="flex items-start gap-3">
+                        <img src="dist/kartbes-logo.png" alt="University logo" class="w-10 h-10 rounded-md object-cover grayscale hover:grayscale-0 transition duration-300 shadow-md" />
+                            <div>
+                                <h3 class="font-semibold text-base mb-1">Wordpress Developer, Bandung</h3>
+                                <p class="text-xs text-gray-400 mb-1">PT. Kartbes Data Solusi</p>
+                                <p class="text-xs text-gray-500 mb-2">June 2022 - August 2022</p>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    build a simple website, using CMS Wordpress, where the website is built as an information media for website visitors, making it easier for users, who need detailed information about the company, both jobs, about the company or services offered, can be easily obtained.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work  Experience Section End-->
+
+
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-28 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-3xl text-primary mb-2">Contact Me</h4>
+                    <p class="text-md font-medium text-secondary md:text-lg">
+                        Feel free to reach out to me for any questions or opportunities!
+                    </p>
+                </div>
+            </div>
+
+            <form action="contact.php" method="POST">
+                <div class="w-full lg:w-2/3 lg:mx-auto">                   
+                    <div class="w-full px-4 mb-4">
+                        <label for="name" class="text-base font-bold text-primary">Nama</label>
+                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-4">
+                    <label for="email" class="text-base font-bold text-primary">E-mail</label>
+                    <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                </div>
+                <div class="w-full px-4 mb-4">
+                    <label for="message" class="text-base font-bold text-primary">Pesan</label>
+                    <input type="textarea" id="name">
+                    <textarea name="message" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" ></textarea>
+                </div>
+                <div class="w-full">
+                    <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+                </div>
+                </div>
+            </form>
+                
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+        <footer class="bg-dark pt-12 pb-2">
+            <div class="container">
+                <div class="flex flew-wrap">
+                    <div class="w-full px-4 mb-12 text-slate-300 font-medium">
+                        <h2 class="font-bold text-lg mx-auto text-center text-primary mb-8">Fedrico Simatupang</h2>
+                        
+                        <nav class="flex flex-col text-base items-center gap-3 lg:flex-row lg:justify-center lg:gap-8 md:flex-row md:justify-center">
+                            <a href="#home" class="hover:text-primary transition">Home</a>
+                            <a href="#project" class="hover:text-primary transition">Project</a>
+                            <a href="#workexperience" class="hover:text-primary transision">Work Experience</a>
+                            <a href="#contact" class="hover:text-primary transition">Contact</a>
+                        </nav>
+                        
+                        <!-- Media Sosial -->
+                        <div class="flex justify-center mt-8">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/ricos_18/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                            </a>
+                            <a href="https://github.com/FedricoS" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                                <svg role="img" class="fill-current w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            </a>
+                            <a href="www.linkedin.com/in/fedricos" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-current w-6 h-6">
+                                    <path
+                                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                                </svg>
+                            </a> 
+                        </div>
+
+                        <!-- Copyright Section -->
+                        <p class="text-sm text-gray-400 mt-8 text-center">
+                            © 2025 Fedrico Simatupang. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Footer Section End -->
+
+
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
